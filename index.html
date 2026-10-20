@@ -12,6 +12,8 @@
 <meta name="application-name" content="PYODA WALK">
 <meta name="apple-mobile-web-app-title" content="PYODA WALK">
 <meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="stylesheet" href="install.css">
+<script src="install.js" defer></script>
 </head>
 <body>
 <main id="app">
@@ -25,7 +27,7 @@
       <div><strong>지도는 눈으로,<br>이야기는 귀로.</strong><p>마을을 골라 걸어보세요.</p></div>
       <div class="heroMark">10</div>
     </div>
-    <div class="sectionRow"><h2>10개 마을</h2><span>전체 활성화</span></div>
+    <div class="sectionRow"><h2>10개 마을</h2><button id="installApp" class="installApp" type="button" hidden>앱 설치</button></div>
     <div id="villageGrid" class="villageGrid"></div>
   </section>
 
@@ -67,6 +69,15 @@
     </div>
   </section>
 </main>
+<dialog id="installGuide" aria-labelledby="installTitle">
+  <div class="installHeading"><h2 id="installTitle">홈 화면에 설치</h2><button id="closeInstall" type="button" aria-label="설치 안내 닫기">×</button></div>
+  <p class="installName">PYODA WALK</p>
+  <div class="installPlatforms" aria-label="휴대폰 종류"><button id="installIos" type="button">아이폰</button><button id="installAndroid" type="button">안드로이드</button></div>
+  <p id="installSteps"></p>
+  <p id="installHint"></p>
+  <button id="copyInstallLink" type="button">설치 링크 복사</button>
+  <p id="installMessage" role="status"></p>
+</dialog>
 <script src="course-data.js"></script><script src="pyoda-location.js"></script><script src="arrival-engine.js"></script><script src="app.js"></script><script src="auto-docent.js"></script><script src="mobile-layout.js"></script>
 <script>if(!window.PyodaNative && 'serviceWorker'in navigator){addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}</script>
 </body></html>

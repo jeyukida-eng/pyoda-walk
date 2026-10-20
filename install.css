@@ -1,0 +1,15 @@
+.installApp{min-height:44px;padding:5px 13px;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink);font:inherit;font-size:12px;font-weight:700;cursor:pointer}
+.installApp[hidden]{display:none}
+.sectionRow:has(.installApp){align-items:center;padding-bottom:4px}
+#installGuide{box-sizing:border-box;width:calc(100% - 28px);max-width:440px;max-height:calc(100dvh - 40px);overflow:auto;border:1px solid var(--line);border-radius:20px;padding:18px;background:var(--cream);color:var(--ink)}
+#installGuide::backdrop{background:#0007}
+.installHeading{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.installHeading h2{font-size:21px;margin:0}
+#closeInstall{flex:none;width:44px;height:44px;border:0;background:transparent;font-size:27px;color:inherit}
+.installName{margin:4px 0 16px;font-size:12px;letter-spacing:2px}
+.installPlatforms{display:flex;gap:8px}
+.installPlatforms button,#copyInstallLink{min-height:44px;padding:9px 13px;border:1px solid var(--line);border-radius:12px;background:var(--paper);font:inherit;font-size:13px;color:inherit}
+.installPlatforms button[aria-pressed=true]{background:var(--ink);color:var(--cream)}
+#installSteps{font-size:16px;line-height:1.8;white-space:pre-line;margin:16px 0 10px}
+#installHint,#installMessage{font-size:12px;line-height:1.6}
+#installMessage:empty{display:none}
