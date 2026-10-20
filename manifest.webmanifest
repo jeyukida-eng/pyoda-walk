@@ -1,0 +1,26 @@
+{
+  "name": "PYODA WALK",
+  "short_name": "PYODA WALK",
+  "start_url": "/pyoda-walk/index.html",
+  "display": "standalone",
+  "background_color": "#f4ecdd",
+  "theme_color": "#f4ecdd",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "id": "/pyoda-walk/",
+  "scope": "/pyoda-walk/",
+  "lang": "ko-KR",
+  "description": "걸으며 듣는 서귀포 골목 도슨트"
+}
